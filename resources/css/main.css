@@ -1,0 +1,48 @@
+@import "tailwind/_base.css";
+@import "tailwind/_components.css";
+@import "tailwind/_utilities.css";
+
+@import "_checkbox-radio-switch.css";
+@import "_progress.css";
+@import "_scrollbars.css";
+@import "_table.css";
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(51, 65, 85, .7) transparent;
+
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(51, 65, 85, .7);
+    border-radius: 9px;
+}
+
+#datatable td {
+    height: 65px;
+    /* max-width: 200px;*/
+    overflow-x: hidden;
+}
+
+#datatable th {
+    /*  max-width: 200px;*/
+    overflow: hidden;
+}
+.vuepicker-demo .dp__main:nth-child(2) {
+    margin-left: -12px;
+}
+.infotext-mb-ff{
+    margin-bottom: -2rem !important;
+}
